@@ -1,0 +1,34 @@
+{
+  "title": "ICAO aeroport kodi",
+  "description": {
+    "part1": "Чтобы начать работу, отредактируйте и сохраните файл <1>src/App.js</1>.",
+    "part2": "С помощью кнопок переключайте язык между английским и русским."
+  },
+  "contacts": "Aloqa uchun",
+
+  "airportList": "Siz ro'yxatdan tanlashingiz mumkin",
+  "contactPage": {
+    "text": " Har qanday savol va takliflaringizni berishingiz mumkin",
+    "email": "Elektron pochta",
+    "telegram": "Telegram"
+  },
+  "copyRadar": "Ushbu aeroportni FlightRadar24 da ko'rish uchun havolani nusxalashingiz va yangi oynada ochishingiz kerak",
+  "error": "Kechirasiz, nimadir xato ketdi. Keyinroq qayta urinib ko'ring yoki administratorlar bilan bog'laning",
+  "enterIcao": "ICAO KODNI KIRITING",
+  "aiportPage": {
+    "lastUpdated": "Oxirgi yangilanish",
+    "windDirection": "Shamol yo'nalishi",
+    "runways": "Uchish-qo‘nish yo‘laklari",
+    "ATC": "*Siz har doim faol uchish-qo'nish yo'lagi uchun aviadispetchirni tinglashingiz kerak. Quyidagi uchish-qo‘nish yo‘lagi takliflari shamol yo‘nalishi bo‘yicha taxminiy ma’lumotlardir.",
+    "windsVariable": "Shamollar o'zgaruvchan",
+    "listenATC": "Faol uchish-qo'nish yo'lagi uchun aviadispetchirni tinglang yoki o'zingiz tanlang",
+    "kts": "kts",
+    "Crosswind": "Crosswind",
+    "from": "from",
+    "Heading": "Heading",
+    "RunwaysMap": "Uchish-qo‘nish yo‘laklari xaritasi",
+    "RunwaysPosition": "* Uchish-qo'nish yo'laklarining o'lchamlari va joylashuvi qat'iy aniq emas",
+    "Google": " *Xaritani yangi oynada ochish uchun GoogleMap ga bosing",
+    "Copied": "Ko‘chirildi"
+  }
+}

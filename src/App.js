@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import AirportContextProvider from "./AirportContext";
+import ScrollManagement from "./components/ScrollManagement";
+import AirportPage from "./pages/AirportPage/AirportPage";
+import ContactsPage from "./pages/ContactsPage";
+import SelectAirportPage from "./pages/SelectAirportPage/SelectAirportPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AirportContextProvider>
+      <Helmet>
+        {/* <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.REACT_APP_GA_ID}`}
+        ></script> */}
+      </Helmet>
+      <ScrollManagement>
+        <Router>
+          <Route path="/" exact component={SelectAirportPage} />
+          <Route path="/airport/:icao" exact component={AirportPage} />
+          <Route path="/contacts" component={ContactsPage} />
+        </Router>
+      </ScrollManagement>
+    </AirportContextProvider>
   );
 }
 

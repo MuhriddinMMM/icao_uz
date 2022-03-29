@@ -1,0 +1,34 @@
+{
+  "title": "ICAO airport code",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and russian using buttons above."
+  },
+  "contacts": "Contacts",
+  
+  "airportList": "You can choose from the list",
+  "contactPage": {
+    "text": " Feel free to ask any questions or suggestions",
+    "email": "Email",
+    "telegram": "Telegram"
+  },
+  "copyRadar": "You have to copy the link and have to open in a new window in order to view this airport on  FlightRadar24",
+  "error": "Sorry, something went wrong. Try again later or contact administrators",
+  "enterIcao": "ENTER ICAO CODE",
+  "aiportPage": {
+    "lastUpdated": "Last updated",
+    "windDirection": "Wind direction",
+    "runways": "Runways",
+    "ATC": "*You must always listen to ATC for the active runway. The following  runway suggestions are just approximations by wind direction.",
+    "windsVariable": "Winds are variable",
+    "listenATC": "Listen to ATC for the active runway, or choose by yourself",
+    "kts": "kts",
+    "Crosswind": "Crosswind",
+    "from": "from",
+    "Heading": "Heading",
+    "RunwaysMap": "Runways Map",
+    "RunwaysPosition": "  *Runways dimensions and positions are not strictly accurate",
+    "Google": " *Click to GoogleMap to open the map in a new window",
+    "Copied": "Copied"
+  }
+}
