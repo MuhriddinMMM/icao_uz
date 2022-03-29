@@ -50,7 +50,7 @@ const NavBar = () => {
               <img
                 className="w-10"
                 src="/logo-small.png"
-                alt="which runway to choose logo small"
+                alt="logo small"
               />
               <div className="ml-3">{t("title")}</div>
             </Link>
