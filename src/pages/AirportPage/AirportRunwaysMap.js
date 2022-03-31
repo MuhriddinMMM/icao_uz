@@ -16,7 +16,7 @@ export default function AirportRunwaysMap(props) {
   const textAreaRef = useRef(null);
   const [airportINFO, setAirportINFO] = useState(initialStateAirportInfo);
   useEffect(() => {
-    var options = {
+    const options = {
       method: "GET",
       url: `https://aerodatabox.p.rapidapi.com/airports/icao/${airport.icao}`,
       headers: {
@@ -24,6 +24,7 @@ export default function AirportRunwaysMap(props) {
         "X-RapidAPI-Key": "86bf410945mshad0ca55a489b485p16783cjsn049550a56268",
       },
     };
+
     axios
       .request(options)
       .then(function (response) {
@@ -34,6 +35,25 @@ export default function AirportRunwaysMap(props) {
         console.error(error);
         setAirportINFO(initialStateAirportInfo);
       });
+
+    // var options = {
+    //   method: "GET",
+    //   url: `https://aerodatabox.p.rapidapi.com/airports/icao/${airport.icao}`,
+    //   headers: {
+    //     "X-RapidAPI-Host": "aerodatabox.p.rapidapi.com",
+    //     "X-RapidAPI-Key": "86bf410945mshad0ca55a489b485p16783cjsn049550a56268",
+    //   },
+    // };
+    // axios
+    //   .request(options)
+    //   .then(function (response) {
+    //     console.log(response.data);
+    //     setAirportINFO(response.data?.urls);
+    //   })
+    //   .catch(function (error) {
+    //     console.error(error);
+    //     setAirportINFO(initialStateAirportInfo);
+    //   });
   }, [airport.icao]);
 
   function copyToClipboard(e) {
